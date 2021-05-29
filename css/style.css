@@ -1,0 +1,22 @@
+.box{
+    width: 400px;
+    height: 200px;
+    border: 2px solid palevioletred;
+    overflow:scroll;
+}
+.box-2{
+    width: 400px;
+    height: 200;
+    border: 2px solid peru;
+    /* visibility: hidden; */
+}
+.images img{
+    width: 100px;
+    height: 100px;
+}
+
+.fill{
+    color: red;
+    font-size: 10px;
+
+}

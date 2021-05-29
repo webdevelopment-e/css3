@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         @keyframes slidein {
+             
+         } {
+            0%{
+                left: 0;
+                top: 0;
+            
+            }
+            50%{
+                left: 400px;
+                top: 500px;
+            }
+            100%{
+                left: 800px;
+                top: 0px;
+                
+            }
+        }
+
+        .stage:hover {
+            animation: slidein 5s ease-in 2s infinite alternate;
+
+        }
+        .ball-2{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-color: lime;
+            border: 2px solid saddlebrown;
+            position: absolute;
+        }
+        .stage{
+            height: 500px;
+            min-width: 1000px;            
+            background-color: greenyellow;
+            border: 5px solid orangered;
+        }
+        .ball{
+            height: 50px;
+            width: 50px;
+            background-color: maroon;
+            border-radius: 50%;
+            position: relative;
+            left: 420px;
+            transition: transform 2s ease 0.4s;
+        }
+        .field:hover .ball{
+            transform:translateX(500px) translateY(-100px);
+            
+        }
+        .bat{
+            transition: transform 0.2 ease;
+        }
+        .bat:hover{
+            transform: rotate(-60deg);
+            transform-origin: 100% 0%;
+        }
+        .trans-box{
+            height: 200px;
+            width: 200px;
+            border: 5px solid greenyellow;
+            background-color: grey;
+            transition: width 10s ease 2s;
+            
+        }
+        .trans-box:hover{
+            width: 1200px;
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            border: 1px solid rebeccapurple;
+        }
+        .outer{
+            background-color: rosybrown;
+        }
+        .inner{
+            background-color: royalblue;
+            transform:rotate(40deg) scale(.75);                                                                                                                        ;
+        }
+    </style>
+</head>
+<body>
+    <h1>transform</h1>
+    <div class="box outer">
+        <div class="box inner">box-1</div>
+    </div>
+    <div class="box outer">
+        <div class="box inner">box-2</div>
+    </div>
+    <div class="box outer">
+        <div class="box inner">box-3</div>
+    </div>
+    <br>
+    <div class="trans-box">
+        <h1>transition</h1>
+    </div>
+    <br>
+ 
+    <div class="field">
+        <img class="bat" src="images/cricket.png" alt="">
+        <div class="ball">
+
+        </div>
+    </div>
+    <br>
+    <div class="stage">
+        <div class="ball-2"></div>
+    </div>
+</body>
+</html>                   
